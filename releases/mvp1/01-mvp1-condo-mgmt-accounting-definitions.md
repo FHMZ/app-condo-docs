@@ -8,9 +8,7 @@
 
 ---
 
-## Versão do Projeto 0.1.0
-
-## 📦 `MVP_1_R1` – Contabilidades (*Atual*)
+## 📦 `MVP_1_R1` – Contabilidades (Atual - v0.1.0)
 
 ### 1. **Autenticação Básica**
    - **Login simples** – (email/senha ou OAuth) para validar perfis e isolar acesso aos dados.
