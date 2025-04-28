@@ -8,7 +8,7 @@
 
 ---
 
-# Projeto Versão 0.1.0
+## Versão do Projeto 0.1.0
 
 ## 📦 `MVP_1_R1` – Contabilidades (*Atual*)
 
