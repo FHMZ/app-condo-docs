@@ -1,12 +1,14 @@
-#### Versão: 1.0.0
-
-## 🚀 Visão Geral da `MVP1` `Contabílidade`
-
-Focado nas necessidades **contábeis** de edifícios residenciais. O objetivo desta primeira versão é oferecer aos síndicos e moradores uma plataforma centralizada, com prioridade para dispositivos móveis, para visualizar, gerenciar e compartilhar informações contábeis com transparência e facilidade. A `MVP_1` será subdividada em entregas menores chamadas de `R1, R2...` abreviação para (Release1). `Ex: MVP_1_R1`
+#### Versão: 0.1.0
 
 ---
 
-## 📦 `MVP_1_R1` – Funcionalidades de Contabilidade
+## 🚀 Visão Geral da `MVP1` `Contabílidade`
+
+### *Focado nas necessidades **contábeis** de edifícios residenciais. O objetivo desta primeira versão é oferecer aos síndicos e moradores uma plataforma centralizada, com prioridade para dispositivos móveis, para visualizar, gerenciar e compartilhar informações contábeis com transparência e facilidade. A `MVP_1` será subdividada em entregas menores chamadas de `R1, R2...` abreviação para (Release1). `Ex: MVP_1_R1`*
+
+---
+
+## 📦 `MVP_1_R1` – Contabilidades (*Atual*)
 
 ### 1. **Autenticação Básica**
    - **Login simples** – (email/senha ou OAuth) para validar perfis e isolar acesso aos dados.
@@ -28,7 +30,7 @@ Focado nas necessidades **contábeis** de edifícios residenciais. O objetivo de
 
 # *'Confirmar'*
 
-## 📦 `MVP_1_R2` – Funcionalidades de Contabilidade
+## 📦 `MVP_1_R2` – Contabilidades
 
 ### 1. Upload de Documentos Contábeis (Para Síndico/Admin)
    - **Balancetes, demonstrativos e relatórios mensais** – Permite o envio de PDFs e planilhas para um repositório central, assegurando que todos os documentos oficiais fiquem disponíveis no mesmo lugar.
@@ -74,7 +76,3 @@ Focado nas necessidades **contábeis** de edifícios residenciais. O objetivo de
 7. Quais melhorias podem ser implementadas no processo atual?
 
 ---
-
-## 🔧 Stack Tecnológica Recomendada
-
-   **To be Defined...**

@@ -1,8 +1,13 @@
-#### MVP Corrente: MVP_1 | Versão: 1.0.0
+#### Versão: 0.1.0
+#### MVP Corrente: MVP_1_R1
 
 ---
 
-# 🏢 Projeto de Gestão Condominial (Cliente)
+## 🏢 Projeto de Gestão Condominial (Definaiçôes Gerais)
+
+### *Documento para compartilhar com o cliente e mostrar as principais definições do projeto.*
+
+---
 
 ## 📌 Visão Geral
 
@@ -21,15 +26,15 @@
 
 ## 🧩 Funcionalidades Principais
 
-1. **Contabilidade** `MVP_1`
-2. **Comunicação** `MVP_2`
-3. **Assembleias** `MVP_3`
-4. **Regulamentos** `MVP_4`
-5. **Financeiro** `MVP_5`
-6. **Recursos Humanos** `MVP_6`
-7. **Infraestrutura** `MVP_7`
-8. **Fornecedores** `MVP_8`
-9. **Manutenção** `MVP_9`
+1. **Contabilidade** `MVP_1` `Em Andamento`
+2. **Comunicação**
+3. **Assembleias**
+4. **Regulamentos**
+5. **Financeiro**
+6. **Recursos Humanos**
+7. **Infraestrutura**
+8. **Fornecedores**
+9. **Manutenção**
 
 ---
 
@@ -49,14 +54,16 @@
 
 ## 🚀 Fases do Projeto
 
-### `MVP_1` – Contabilidade
+### `MVP_1` – Contabilidade (Atual)
 
 **Objetivo:** Focado nas necessidades **contábeis** de edifícios residenciais. O objetivo desta primeira versão é oferecer aos síndicos e moradores uma plataforma centralizada, com prioridade para dispositivos móveis, para visualizar, gerenciar e compartilhar informações contábeis com transparência e facilidade.
 
-**Detalhes:** Arquivo `01_mvp1_condo_accounting_details.md`
+**Detalhes:** Arquivo [01-mvp1-condo-mgmt-accounting-definitions.md](../releases/mvp1/01-mvp1-condo-mgmt-accounting-definitions.md)
 
 ### `MVP_2` – [Module]
 
 ---
 
 Este documento serve como base para alinhamento entre as partes interessadas e planejamento das próximas etapas do desenvolvimento do aplicativo de gestão condominial.
+
+---

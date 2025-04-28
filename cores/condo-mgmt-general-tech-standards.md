@@ -1,6 +1,8 @@
-#### Version: 1.0.0
+#### Version: 0.1.0
 
-## Standard Convention Document
+---
+
+## 🏢 Condo Management General Technologies Standards
 
 #### *This document defines a **standard, company-wide naming convention** for all modules of the Condominium Management system. Each functional module is presented on its own page with a brief description and naming examples.*
 
@@ -15,11 +17,11 @@
 ## 📌 Segments
 
 ### 1. `platform` Defines the technical platform or service layer
-  - `api` — Backend services (REST, GraphQL, etc.).
+  - `api` — Backend services.
   - `web` — Web frontend apps.
-  - `mob` — Mobile apps (native or hybrid).
+  - `mob` — Mobile apps.
   - `bff` — Backend for frontend services.
-  - `lib` — Shared libraries (domain or cross-cutting).
+  - `lib` — Shared libraries (frontend or backend) (domain or cross-cutting).
 
 ### 2. `app-name` Global system or context name.
   - `condo-mgmt` — Short for condominium management.
@@ -60,7 +62,7 @@
 
 ---
 
-## 📁 Applications Repository Structure
+## 📁 Applications Technologies and Repository Structures
 
 ```BFF Service
 repo/
@@ -108,7 +110,13 @@ repo/
     |--------------------|------------------------------------------|
     | Backend Service    | `api-condo-mgmt-accounting-bill-be`      |
 
-5. **Environment Suffixes:** Append `-dev`, `-qa`, or `-prod` to versions for different environments, e.g.: `1.0.0-qa`
+5. **Environment Suffixes:** Append ex.:
+
+    | **Environment**   | **Suffix**    | **Example Version**   |
+    |-------------------|---------------|-----------------------|
+    | Development       | `-dev`        | `1.0.0-dev`           |
+    | QA                | `-qa`         | `1.0.0-qa`            |
+    | Production        | `-prod`       | `1.0.0-prod`          |
 
 6. **Git Branch Naming:**
 
@@ -158,12 +166,12 @@ repo/
 
 ### ✅ Naming Examples
 
-| **Artifact**            | **Name**                                              |
-|-------------------------|-------------------------------------------------------|
-| Backend Service         | `ci-api-condo-mgmt-accounting-bill-be.yml`            |
-| Back for Frontend (BFF) | `ci-api-condo-mgmt-shared-utils-bff.yml`              |
-| Frontend (General)      | `ci-web-condo-mgmt-communication-notification-fe.yml` |
-| Library                 | `ci-lib-condo-mgmt-shared-utils-fe.yml`               |
+| **Artifact**            | **Name**                                   |
+|-------------------------|--------------------------------------------|
+| Backend Service         | `ci-api-accounting-bill-be.yml`            |
+| Back for Frontend (BFF) | `ci-api-shared-utils-bff.yml`              |
+| Frontend (General)      | `ci-web-communication-notification-fe.yml` |
+| Library                 | `ci-lib-shared-utils-fe.yml`               |
 
 ---
 
@@ -178,3 +186,5 @@ repo/
 ---
 
 This naming standard, combined with these operational practices, prepares our platform for future growth, automation, and cross-team collaboration.
+
+---
