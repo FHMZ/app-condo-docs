@@ -22,7 +22,7 @@
   - `lib` — Shared libraries (domain or cross-cutting).
 
 ### 2. `app-name` Global system or context name.
-  - `condo` — Short for condominium management.
+  - `condo-mgmt` — Short for condominium management.
 
 ### 3. `module` Specific functional area or business feature.
   - `accounting`
@@ -40,30 +40,23 @@
   - `lib` — Library
   - `bff` — Back for Frontend
 
-
-### ✅ Naming Examples
-
-| Artifact           | Name                               |
-|--------------------|------------------------------------|
-| Backend Service    | `api-condo-accounting-bill-be`     |
-| BFF Service        | `api-condo-communication-chat-bff` |
-| Frontend Web       | `web-condo-financial-dashboard-fe` |
-| Frontend Mobile    | `mob-condo-service-request-fe`     |
-| Shared Lib (BE)    | `lib-condo-shared-utils-be`        |
-| Shared Lib (FE)    | `lib-condo-shared-utils-fe`        |
-
 ---
 
 ## 🔧 Recomended Technologies
 
-| Layers                  | Technologies                      |
-|-------------------------|-----------------------------------|
-| **Frontend**            | Flutter                           |
-| **Backend**             | Firebase (Firestore + Storage)    |
-| **Authentication**      | Firebase Auth                     |
-| **Admin Web**           | Next.js ou Firebase Hosting       |
-| **Gráficos**            | Victory (mobile) / Recharts (web) |
-| **Push Notifications**  | OneSignal                         |
+| **Layer**                     | **Supabase (MVP)**                                                    |
+|-------------------------------|-----------------------------------------------------------------------|
+| **Mobile**                    | Flutter + `supabase_flutter`                                          |
+| **Web Admin**                 | Next.js + TypeScript + `@supabase/supabase-js`                        |
+| **Backend / Business Logic**  | Supabase Edge Functions (Deno) + RPC/Triggers on Postgres             |
+| **Database**                  | PostgreSQL (via Supabase)                                             |
+| **Authentication**            | Supabase Auth (GoTrue)                                                |
+| **File Storage**              | Supabase Storage (S3-compatible)                                      |
+| **Realtime & WebSockets**     | Supabase Realtime (Postgres replication)                              |
+| **Push Notifications**        | Direct integration with FCM (Firebase Cloud Messaging) or OneSignal   |
+| **Charts & UI**               | Victory (Flutter) / Recharts (Next.js)                                |
+| **CI/CD & Infrastructure**    | GitHub Actions + Supabase CLI                                         |
+| **Monitoring & Logs**         | Supabase Studio + potential export to Grafana/Prometheus              |
 
 ---
 
@@ -71,31 +64,31 @@
 
 ```BFF Service
 repo/
-├── api-condo-financial-dashboard-bff/
+├── api-condo-mgmt-financial-dashboard-bff/
     ├──
 ```
 
 ```Backend Service
 repo/
-├── api-condo-financial-dashboard-be/
+├── api-condo-mgmt-financial-dashboard-be/
     ├──
 ```
 
 ```Library Service
 repo/
-├── lib-condo-financial-dashboard-be/
+├── lib-condo-mgmt-financial-dashboard-be/
     ├──
 ```
 
 ```Frontend Web
 repo/
-├── web-condo-financial-dashboard-fe/
+├── web-condo-mgmt-financial-dashboard-fe/
     ├──
 ```
 
 ```Frontend Mobile
 repo/
-├── mob-condo-financial-dashboard-fe/
+├── mob-condo-mgmt-financial-dashboard-fe/
     ├──
 ```
 
@@ -109,19 +102,22 @@ repo/
 
 3. **Git Release Tags:** Create annotated Git tags matching your SemVer, e.g.: `git tag -a v1.0.0 -m "Release v1.0.0"`
 
-4. **Repository Naming:**
-   Use lowercase hyphens (no version numbers in the repo name), e.g.:
-   `api-condo-accounting`
+4. **Repository Naming:** Use lowercase hyphens (no version numbers in the repo name), ex.:
 
-5. **Environment Suffixes:**
-   Append `-dev`, `-qa`, or `-prod` to versions for different environments, e.g.:
-   `1.0.0-qa`
+    | **Artifact**       | **Name**                                 |
+    |--------------------|------------------------------------------|
+    | Backend Service    | `api-condo-mgmt-accounting-bill-be`      |
+
+5. **Environment Suffixes:** Append `-dev`, `-qa`, or `-prod` to versions for different environments, e.g.: `1.0.0-qa`
 
 6. **Git Branch Naming:**
-    - `feature/<task-number>_<short-desc>`
-    - `bugfix/<task-number>_<issue-id>`
-    - `hotfix/<task-number>_<critical-bug>`
-    - `release/<version>`
+
+    | **Branch Type**   | **Format**                            | **Description**               |
+    |-------------------|---------------------------------------|-------------------------------|
+    | Feature           | `feature/<task-number>_<short-desc>`  | New features                  |
+    | Bugfix            | `bugfix/<task-number>_<issue-id>`     | Fixing bugs                   |
+    | Hotfix            | `hotfix/<task-number>_<critical-bug>` | Urgent critical bug fixes     |
+    | Release           | `release/<version>`                   | Preparing a new release       |
 
 7. **Semantic Versioning:** Append `-v1.0.0` `-v1.0.1` for releases.
 
@@ -162,19 +158,19 @@ repo/
 
 ### ✅ Naming Examples
 
-| Artifact                | Name                                             |
-|-------------------------|--------------------------------------------------|
-| Backend Service         | `ci-api-condo-accounting-bill-be.yml`            |
-| Back for Frontend (BFF) | `ci-api-condo-shared-utils-bff.yml`              |
-| Frontend (General)      | `ci-web-condo-communication-notification-fe.yml` |
-| Library                 | `ci-lib-condo-shared-utils-fe.yml`               |
+| **Artifact**            | **Name**                                              |
+|-------------------------|-------------------------------------------------------|
+| Backend Service         | `ci-api-condo-mgmt-accounting-bill-be.yml`            |
+| Back for Frontend (BFF) | `ci-api-condo-mgmt-shared-utils-bff.yml`              |
+| Frontend (General)      | `ci-web-condo-mgmt-communication-notification-fe.yml` |
+| Library                 | `ci-lib-condo-mgmt-shared-utils-fe.yml`               |
 
 ---
 
 ## 🌟 Additional Standards & Best Practices
 
 1. **Kebab-case:** for all names plural names (services, repos, models, controllers, utils, files).
-2. **Docker Image Tags:** `<artifact>:<version>-<env>` (e.g., `api-condo-accounting-bill-be:1.0.0-prod`).
+2. **Docker Image Tags:** `<artifact>:<version>-<env>` (e.g., `api-condo-mgmt-accounting-bill-be:1.0.0-prod`).
 3. **API Version Path:** Include version path or header (e.g., `/v1/module/domain`).
 4. **Configuration Management:** Use environment variables prefixed by service name (e.g., `ACCOUNTING_DB_URI`).
 5. **Documentation:** Maintain `docs/` folder with OpenAPI/Swagger specs, architecture diagrams.

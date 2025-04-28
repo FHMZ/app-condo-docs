@@ -77,9 +77,4 @@ Focado nas necessidades **contábeis** de edifícios residenciais. O objetivo de
 
 ## 🔧 Stack Tecnológica Recomendada
 
-- **Frontend:** Flutter
-- **Backend:** Firebase (Firestore + Storage)
-- **Autenticação:** Firebase Auth
-- **Painel Web (Admin):** Next.js ou Firebase Hosting
-- **Gráficos:** Victory (mobile) / Recharts (web)
-- **Notificações Push:** OneSignal (futuro)
+   **To be Defined...**
