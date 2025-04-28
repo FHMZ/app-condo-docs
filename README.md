@@ -3,11 +3,11 @@
 
 ---
 
-## 📚 Condo Management Documentation
+## 📚 Condo Management - Docs
 
-### *This repository centralizes all documentation related to the development of the **Condo Management Platform**, including core project notes, standards, and MVP planning details.*
+### *This repository organizes all official documentation for the development of the **Condo Management Platform**, covering project notes, technical standards, and MVP releases.*
 
-### *It is structured to ensure easy access, modular growth, and long-term maintenance as the platform evolves.*
+### *It is designed to be modular, easy to navigate, and ready to evolve as the platform grows.*
 
 ---
 
@@ -39,11 +39,9 @@ condo-mgmt-docs/
 
 ## 🏗️ Purpose
 
-This repository aims to:
-- Maintain clear and versioned project documentation.
-- Facilitate onboarding for new team members.
-- Provide a single source of truth for requirements and architecture decisions.
-- Support long-term scalability of the Condo Management Platform.
+- Serve as the single source of truth for project documentation.
+- Support team alignment and future onboarding.
+- Track project evolution through structured and versioned releases.
 
 ---
 

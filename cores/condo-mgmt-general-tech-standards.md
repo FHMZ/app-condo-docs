@@ -2,7 +2,7 @@
 
 ---
 
-## 🏢 Condo Management General Technologies Standards
+## 🏢 Condo Management - General Technology Standards
 
 #### *This document defines a **standard, company-wide naming convention** for all modules of the Condominium Management system. Each functional module is presented on its own page with a brief description and naming examples.*
 
@@ -41,24 +41,6 @@
   - `fe` — Frontend
   - `lib` — Library
   - `bff` — Back for Frontend
-
----
-
-## 🔧 Recomended Technologies
-
-| **Layer**                     | **Supabase (MVP)**                                                    |
-|-------------------------------|-----------------------------------------------------------------------|
-| **Mobile**                    | Flutter + `supabase_flutter`                                          |
-| **Web Admin**                 | Next.js + TypeScript + `@supabase/supabase-js`                        |
-| **Backend / Business Logic**  | Supabase Edge Functions (Deno) + RPC/Triggers on Postgres             |
-| **Database**                  | PostgreSQL (via Supabase)                                             |
-| **Authentication**            | Supabase Auth (GoTrue)                                                |
-| **File Storage**              | Supabase Storage (S3-compatible)                                      |
-| **Realtime & WebSockets**     | Supabase Realtime (Postgres replication)                              |
-| **Push Notifications**        | Direct integration with FCM (Firebase Cloud Messaging) or OneSignal   |
-| **Charts & UI**               | Victory (Flutter) / Recharts (Next.js)                                |
-| **CI/CD & Infrastructure**    | GitHub Actions + Supabase CLI                                         |
-| **Monitoring & Logs**         | Supabase Studio + potential export to Grafana/Prometheus              |
 
 ---
 
@@ -182,6 +164,24 @@ repo/
 3. **API Version Path:** Include version path or header (e.g., `/v1/module/domain`).
 4. **Configuration Management:** Use environment variables prefixed by service name (e.g., `ACCOUNTING_DB_URI`).
 5. **Documentation:** Maintain `docs/` folder with OpenAPI/Swagger specs, architecture diagrams.
+
+---
+
+## 🔧 Recomended Technologies for `MVP_1_R1`
+
+| **Layer**                     | **Supabase (MVP)**                                                    |
+|-------------------------------|-----------------------------------------------------------------------|
+| **Mobile**                    | Flutter + `supabase_flutter`                                          |
+| **Web Admin**                 | Next.js + TypeScript + `@supabase/supabase-js`                        |
+| **Backend / Business Logic**  | Supabase Edge Functions (Deno) + RPC/Triggers on Postgres             |
+| **Database**                  | PostgreSQL (via Supabase)                                             |
+| **Authentication**            | Supabase Auth (GoTrue)                                                |
+| **File Storage**              | Supabase Storage (S3-compatible)                                      |
+| **Realtime & WebSockets**     | Supabase Realtime (Postgres replication)                              |
+| **Push Notifications**        | Direct integration with FCM (Firebase Cloud Messaging) or OneSignal   |
+| **Charts & UI**               | Victory (Flutter) / Recharts (Next.js)                                |
+| **CI/CD & Infrastructure**    | GitHub Actions + Supabase CLI                                         |
+| **Monitoring & Logs**         | Supabase Studio + potential export to Grafana/Prometheus              |
 
 ---
 

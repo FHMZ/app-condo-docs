@@ -2,7 +2,7 @@
 
 ---
 
-## Estimativa de Custos - MVP1 App Condominial (Contábil)
+## Condo Mandagement - Estimativa de Custos `MVP_1` `Módulo Contábil`
 
 ## 💼 Valor/Hora Base
 
@@ -18,7 +18,7 @@
 |-------------------------------------------|-----------------------|-------------------|-------------------|
 | `MVP_1_R1 – Funcionalidades Simples`      | 200 horas             | R$ 100,00         | R$ 20.000,00      |
 | `MVP_1_R2 – Funcionalidades Avançadas`    | 300 horas             | R$ 100,00         | R$ 30.000,00      |
-| **Total MVP1 (R1 + R2)**                  | 500 horas             | R$ 100,00         | **R$ 50.000,00**  |
+| **Total MVP_1 (R1 + R2)**                 | 500 horas             | R$ 100,00         | **R$ 50.000,00**  |
 
 ---
 

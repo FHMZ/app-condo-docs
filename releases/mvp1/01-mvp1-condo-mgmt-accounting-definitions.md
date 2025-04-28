@@ -2,11 +2,13 @@
 
 ---
 
-## 🚀 Visão Geral da `MVP1` `Contabílidade`
+## 🚀 Condo Management - Visão Geral da `MVP1` `Contabílidade`
 
 ### *Focado nas necessidades **contábeis** de edifícios residenciais. O objetivo desta primeira versão é oferecer aos síndicos e moradores uma plataforma centralizada, com prioridade para dispositivos móveis, para visualizar, gerenciar e compartilhar informações contábeis com transparência e facilidade. A `MVP_1` será subdividada em entregas menores chamadas de `R1, R2...` abreviação para (Release1). `Ex: MVP_1_R1`*
 
 ---
+
+# Projeto Versão 0.1.0
 
 ## 📦 `MVP_1_R1` – Contabilidades (*Atual*)
 

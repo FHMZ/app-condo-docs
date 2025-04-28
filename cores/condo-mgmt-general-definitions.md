@@ -3,7 +3,7 @@
 
 ---
 
-## 🏢 Projeto de Gestão Condominial (Definaiçôes Gerais)
+## 🏢 Condo Management - Definaiçôes Gerais
 
 ### *Documento para compartilhar com o cliente e mostrar as principais definições do projeto.*
 
@@ -38,7 +38,7 @@
 
 ---
 
-## 📌 Maiories Necessidades
+## 📌 Maiores Necessidades
 
 ### 1. Comunicação
 
